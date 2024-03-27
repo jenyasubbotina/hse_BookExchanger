@@ -1,0 +1,40 @@
+[versions]
+agp = "8.2.0"
+kotlin = "1.9.20"
+compose = "1.5.4"
+compose-compiler = "1.5.4"
+koin-android = "3.5.0"
+koin-android-compose = "3.5.0"
+koin-core = "3.5.0"
+compose-material = "1.6.4"
+androidx-activityCompose = "1.8.0"
+navigationCompose = "2.7.7"
+retrofit = "2.10.0"
+squareup-retrofit = "2.9.0"
+securityCryptoKtx = "1.0.0"
+playServicesTagmanagerV4Impl = "18.0.4"
+
+[libraries]
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "squareup-retrofit" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
+compose-material = { module = "androidx.compose.material:material", version.ref = "compose-material" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+retrofit3 = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin-android" }
+koin-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin-android-compose" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin-core" }
+androidx-crypto = "androidx.security:security-crypto-ktx:1.1.0-alpha06"
+play-services-tagmanager-v4-impl = { group = "com.google.android.gms", name = "play-services-tagmanager-v4-impl", version.ref = "playServicesTagmanagerV4Impl" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
